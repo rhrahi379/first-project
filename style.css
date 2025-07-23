@@ -1,0 +1,52 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background: #303030;
+    font-family: 'verdana', sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    gap: 100px;
+    padding-top: 100px;
+}
+.count h1 {
+    font-size: 10rem;
+    color: #404040;
+}
+.container .btn {
+    width: 50%;
+    max-width: 700px;
+    height: 5%;
+}
+.btn button {
+    width: 40%;
+    font-size: 28px;
+    height: 100%;
+    border: 1px solid #555;
+    outline: none;
+    background: #303030;
+    color: #555;
+    border-radius: 6px;
+    transition: .3s;
+}
+.btn button:hover {
+    border-color: #666;
+    color: #666;
+    transform: scale(1.03);
+}
+.btn button:active {
+    transform: scale(1);
+}
+.btn button:nth-child(2) {
+    float: right;
+}

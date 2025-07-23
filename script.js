@@ -1,0 +1,10 @@
+let count = 1;
+
+document.getElementById('plus').onclick = function () {
+    document.querySelector('h1').innerHTML = count;
+    count++;
+}
+document.getElementById('minus').onclick = function () {
+    document.querySelector('h1').innerHTML = count - 2;
+    count--;
+}
