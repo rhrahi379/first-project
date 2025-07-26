@@ -1,3 +1,7 @@
+:root {
+    --color: #a6d400;
+    --hover-color: #c8ff00;
+}
 * {
     margin: 0px;
     padding: 0px;
@@ -20,8 +24,8 @@ body {
     padding-top: 100px;
 }
 .count h1 {
-    font-size: 10rem;
-    color: #404040;
+    font-size: 15rem;
+    color: var(--hover-color);
 }
 .container .btn {
     width: 50%;
@@ -32,16 +36,16 @@ body {
     width: 40%;
     font-size: 28px;
     height: 100%;
-    border: 1px solid #555;
+    border: 1px solid var(--color);
     outline: none;
     background: #303030;
-    color: #555;
+    color: var(--color);
     border-radius: 6px;
     transition: .3s;
 }
 .btn button:hover {
-    border-color: #666;
-    color: #666;
+    border-color: var(--hover-color);
+    color: var(--hover-color);
     transform: scale(1.03);
 }
 .btn button:active {
