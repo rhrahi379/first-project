@@ -1,6 +1,7 @@
 :root {
     --color: #a6d400;
     --hover-color: #c8ff00;
+    --text-color: #fff;
 }
 * {
     margin: 0px;
@@ -34,19 +35,20 @@ body {
 }
 .btn button {
     width: 40%;
-    font-size: 28px;
+    font-size: 16px;
     height: 100%;
-    border: 1px solid var(--color);
+    border: 2px solid var(--color);
     outline: none;
-    background: #303030;
     color: var(--color);
     border-radius: 6px;
     transition: .3s;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: #303030;
 }
 .btn button:hover {
-    border-color: var(--hover-color);
-    color: var(--hover-color);
-    transform: scale(1.03);
+    background: var(--color);
+    color: var(--text-color);
 }
 .btn button:active {
     transform: scale(1);
