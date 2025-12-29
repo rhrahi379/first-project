@@ -5,16 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Count & Reset</title>
 </head>
-<body>
-    <div class="container">
-        <div class="count">
-            <h1>0</h1>
+<body class="grid place-items-center">
+    <div>
+        <div class="count mb-12">
+            <h1 class="text-center text-9xl font-bold text-green-400">0</h1>
         </div>
-        <div class="btn">
-            <button id="plus">+</button>
-            <button id="minus">-</button>
+        <div class="btn-box">
+            <button class="minus btn btn-error w-22 btn-outline">-</button>
+            <button class="reset btn btn-warning w-22 btn-outline">Reset</button>
+            <button class="plus btn btn-accent w-22 btn-outline">+</button>
         </div>
     </div>
     <script src="script.js"></script>

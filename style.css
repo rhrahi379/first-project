@@ -1,8 +1,4 @@
-:root {
-    --color: #a6d400;
-    --hover-color: #c8ff00;
-}
-* {
+*, *::before, *::after {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -13,44 +9,9 @@ body {
     background: #303030;
     font-family: 'verdana', sans-serif;
 }
-.container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: stretch;
-    gap: 100px;
-    padding-top: 100px;
+.count {
+    margin-bottom: 50px;
 }
-.count h1 {
-    font-size: 15rem;
-    color: var(--hover-color);
-}
-.container .btn {
-    width: 50%;
-    max-width: 700px;
-    height: 5%;
-}
-.btn button {
-    width: 40%;
-    font-size: 28px;
-    height: 100%;
-    border: 1px solid var(--color);
-    outline: none;
-    background: #303030;
-    color: var(--color);
-    border-radius: 6px;
-    transition: .3s;
-}
-.btn button:hover {
-    border-color: var(--hover-color);
-    color: var(--hover-color);
-    transform: scale(1.03);
-}
-.btn button:active {
-    transform: scale(1);
-}
-.btn button:nth-child(2) {
-    float: right;
+button {
+    margin: 0 12px;
 }

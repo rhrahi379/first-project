@@ -1,10 +1,18 @@
-let count = 1;
+const minus = document.querySelector('.minus');
+const reset = document.querySelector('.reset');
+const plus = document.querySelector('.plus');
+const count = document.querySelector('h1');
 
-document.getElementById('plus').onclick = function () {
-    document.querySelector('h1').innerHTML = count;
-    count++;
-}
-document.getElementById('minus').onclick = function () {
-    document.querySelector('h1').innerHTML = count - 2;
-    count--;
-}
+minus.addEventListener('click', () => {
+    let num = parseInt(count.innerText);
+    count.innerText = num - 1;
+})
+
+plus.addEventListener('click', () => {
+    let num = parseInt(count.innerText);
+    count.innerText = num + 1;
+})
+
+reset.addEventListener('click', () => {
+    count.innerText = 0;
+})
